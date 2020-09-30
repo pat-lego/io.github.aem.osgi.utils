@@ -41,4 +41,11 @@ public class XmlDataParserTest {
             xmlParser.getElement(xml, StringUtils.EMPTY);
         });
     }
+
+    @Test
+    public void testOSGI() {
+        XmlDataParser xmlParser = new XmlDataParser();
+        xmlParser.activate();
+        xmlParser.deactivate();
+    }
 }

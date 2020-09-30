@@ -56,4 +56,12 @@ public class JsonDataParserTest {
         });
        
     }
+
+    @Test
+    public void testOSGi() throws Exception {
+        JsonDataParser jsonParser = new JsonDataParser();
+        jsonParser.activate();
+        jsonParser.deactivate();
+        jsonParser.modified();
+    }
 }

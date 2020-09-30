@@ -59,12 +59,12 @@ public class XmlDataParser implements DataParser {
     }
 
     @Activate
-    protected void activate() {
+    public void activate() {
         logger.info(String.format("%s is now active", this.getClass().getName()));
     }
 
     @Deactivate
-    protected void deactivate() {
+    public void deactivate() {
         logger.info(String.format("%s has been deactivated", this.getClass().getName()));
     }
 
